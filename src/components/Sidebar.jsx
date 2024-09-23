@@ -1,5 +1,10 @@
 import React, { Fragment } from "react";
-import { AlarmClockCheck, CheckCheck, CalendarClock, ChartNoAxesCombined } from "lucide-react";
+import {
+  AlarmClockCheck,
+  CheckCheck,
+  CalendarClock,
+  ChartNoAxesCombined,
+} from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { SheetContent, SheetHeader, SheetTitle } from "./ui/sheet";
 import { Sheet } from "./ui/sheet";
@@ -50,7 +55,7 @@ const Sidebar = ({ open, setOpen }) => {
           <div className="flex flex-col h-full mt-3">
             <SheetHeader className="border-b mt-3">
               <SheetTitle className="text-2xl font-extrabold  m-2">
-                Admin Panel
+                Todo
               </SheetTitle>
             </SheetHeader>
             <MenuItems setOpen={setOpen} />
@@ -63,7 +68,7 @@ const Sidebar = ({ open, setOpen }) => {
           className="flex items-center gap-2 cursor-pointer mb-2"
         >
           <ChartNoAxesCombined size={30} />{" "}
-          <h1 className="text-2xl font-extrabold ">Admin Panel</h1>
+          <h1 className="text-2xl font-extrabold ">Your Lists</h1>
         </div>
         <MenuItems />
       </aside>
