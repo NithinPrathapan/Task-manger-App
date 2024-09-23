@@ -1,10 +1,18 @@
 import React from "react";
-import Header from "./components/Header";
+import { Route, Routes } from "react-router-dom";
+import Pending from "./pages/Pending";
+import Completed from "./pages/Completed";
+import Layout from "./components/Layout";
 
 const App = () => {
   return (
     <div className="bg-secondary">
-      <Header />
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="pending-tasks" element={<Pending />} />
+          <Route path="completed-tasks" element={<Completed />} />
+        </Route>
+      </Routes>
     </div>
   );
 };

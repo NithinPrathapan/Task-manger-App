@@ -5,7 +5,7 @@ import { Menu } from "lucide-react";
 const Header = ({ open, setOpen }) => {
   return (
     <header className="flex justify-between items-center px-4 py-3  ">
-      <Button onClick={() => setOpen(!open)} className="w-16 h-12 lg:hidden ">
+      <Button onClick={() => setOpen(true)} className="w-16 h-12 lg:hidden ">
         <Menu />
       </Button>
       <h1 className="font-Roboto uppercase text-2xl font-extrabold">
